@@ -38,7 +38,7 @@ const ChartSix = () => {
           <h2 className="font-bold">Card Title</h2>
           <p>Description</p>
         </div>
-        <Image src='images/dot.svg' width={17} height={17} alt="dot" />
+        <Image className=" cursor-pointer" src='images/dot.svg' width={17} height={17} alt="dot" />
       </div>
       <Box>
         <BottomNavigation className="!h-5" showLabels value={value} onChange={handleChange}>

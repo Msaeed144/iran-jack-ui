@@ -53,7 +53,7 @@ const ChartThree: React.FC = () => {
           <h2 className="font-bold">Card Title</h2>
           <p>Description</p>
         </div>
-        <Image src="images/dot.svg" width={17} height={17} alt="dot" />
+        <Image className=" cursor-pointer" src="images/dot.svg" width={17} height={17} alt="dot" />
       </div>
 
       <Chart
