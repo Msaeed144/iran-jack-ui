@@ -5,7 +5,6 @@ import { Box, BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { useState } from 'react';
 
 const ChartSix = () => {
-  // سه مجموعه داده برای هر روز
   const dataSet = [
     [
       { group: 'group A', data: [4, 3, 5] },
@@ -24,10 +23,9 @@ const ChartSix = () => {
     ]
   ];
 
-  const [value, setValue] = useState(0); // انتخاب روز
-  const [data, setData] = useState(dataSet[0]); // داده اولیه
+  const [value, setValue] = useState(0); 
+  const [data, setData] = useState(dataSet[0]); 
 
-  // تغییر روز و داده‌ها
   const handleChange = (_event: React.ChangeEvent<unknown>, newValue: number) => {
     setValue(newValue);
     setData(dataSet[newValue]);
@@ -52,12 +50,14 @@ const ChartSix = () => {
       <div className='sm:w-full w-[20px]'>
         <BarChart
           xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]} // داده‌های محور X
-          series={data.map(item => ({ data: item.data }))} // داده‌های سری
+          series={data.map(item => ({ data: item.data }))} 
           width={350}
           height={200}
         />
       </div>
-
+      <div className='flex flex-col justify-end h-full'>
+       <a className="text-blue-600 mt-2" href="#">view details</a>
+      </div>
     </div>
   );
 };

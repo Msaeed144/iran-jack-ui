@@ -21,7 +21,7 @@ const ChartOne = () => {
 
   return (
     <div className=" p-2 w-full sm:w-[30%] border rounded-lg shadow-sm flex flex-col items-center">
-      <div className="flex justify-between">
+      <div className="w-full flex justify-between">
         <div>
           <h2 className="font-bold">Card Title</h2>
           <p>Description</p>
@@ -62,7 +62,7 @@ const ChartOne = () => {
         <span className="w-3 h-3 bg-[#00b7c3]"></span>
         <p>label 2</p>
       </div>
-      <div className="flex flex-col justify-end h-full">
+      <div className="w-full flex flex-col justify-end h-full">
         <a className="text-blue-600" href="#">
           view details
         </a>
